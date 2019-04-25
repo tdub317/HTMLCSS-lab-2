@@ -110,7 +110,7 @@ a {
         justify-content: space-between;
         width: 50%;
     }
-    
+
     .company_name {
         margin: 0px;
     }
@@ -165,12 +165,29 @@ a {
     button {
         position: absolute;
         left: 50%;
-        bottom: 40%;
+        bottom: 0;
         transform: translateX(-50%);
     }
 }
 
-/* Large Tablet and Desktop View
+/* Large Tablet and Desktop View */
 @media only screen and (min-width: 992px) {
+    header {
+        height: 20vh;
+    }
 
-} */
+    nav {
+        width: 40%;
+    }
+
+    main {
+        height: 70vh;
+    }
+
+    button {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+}
