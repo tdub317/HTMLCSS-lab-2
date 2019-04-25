@@ -1,2 +1,37 @@
 /* Mobile First */
+body {
+    font-family: "Open Sans";
+    background-color: #f9fafc;
+    margin: 0px 10px;
+    padding: 0;
+}
+body, nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.company_name {
+    font-weight: 600;
+    margin: 12px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #69696a;
+    padding: 5px 0px;
+}
+
+.button {
+    background-color: #000;
+    color: #f9fafc;
+    padding: 8px 0px;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    border-radius: 20px;
+    border: 0px;
+    box-sizing: content-box;
+    cursor: pointer;
+    height: 22px;
+}
 
