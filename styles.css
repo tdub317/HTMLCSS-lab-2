@@ -1,18 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 /* Mobile First */
+html, body {
+    margin: 0;
+}
+
 body {
     font-family: "Open Sans";
     background-color: #f9fafc;
     margin: 0px 10px;
     padding: 0;
+    height: 100vh;
 }
-body, nav {
+body, header, nav, main {
     display: flex;
     flex-direction: column;
 }
 
 .company_name {
     font-weight: 600;
-    margin: 12px 0px;
+    margin: 10px 0px;
 }
 
 a {
@@ -24,6 +31,8 @@ a {
 .button {
     background-color: #000;
     color: #f9fafc;
+    margin-top: 10px;
+    margin-bottom: 20px;
     padding: 8px 0px;
     font-size: 16px;
     text-align: center;
@@ -35,3 +44,124 @@ a {
     height: 22px;
 }
 
+.section_title {
+    font-size: 28px;
+}
+
+.section_content {
+    border-left: 5px solid #69696a;
+    padding-left: 15px;
+    color: #69696a;
+}
+
+.circle_container {
+    position: relative;
+    display: none;
+}
+
+.circle {
+    border-radius: 50%;
+    position: absolute;
+}
+
+.orange {
+    background-color: rgba(247, 193, 162, 0.7);
+    width: 160px;
+    height: 160px;
+}
+
+.purple {
+    background-color: rgba(207, 130, 213, 0.6);
+    width: 120px;
+    height: 120px;
+}
+
+.pink {
+    background-color: rgba(247, 136, 167, 0.6);
+    width: 240px;
+    height: 240px;
+}
+
+/* Tablet View */
+@media only screen and (min-width: 768px) {
+    body {
+        margin: 20px;
+    }
+
+    body, header, nav, main {
+        flex-direction: row;
+    }
+
+    body, header{
+        flex-flow: wrap;
+    }
+
+    header {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .company_name {
+        margin: 0px;
+    }
+
+    a {
+        padding: 8px;
+    }
+    
+    .button {
+        width: 20%;
+        margin: 0;
+    }
+
+    main {
+        position: relative;
+        width: 100%;
+        height: 50vh;
+    }
+
+    .content_container, .circle_container {
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+    }
+
+    .section_content {
+        font-size: 12px;
+    }
+
+    .circle_container {
+        height: 308px;
+    }
+
+    .circle {
+        right: 0;
+    }
+
+    .pink {
+        top: 15%;
+        right: 18%;
+        z-index: 1;
+    }
+
+    .orange {
+        top: 60%;
+        z-index: 2;
+    }
+
+    .purple {
+        top: 30%;
+    }
+
+    button {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+}
+
+/* Large Tablet and Desktop View
+@media only screen and (min-width: 992px) {
+
+} */
